@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  align-items: center;
+  width: 1296px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__logo {
+    display: block;
+    margin-right: 295px;
+  }
+}
+
+.header-list {
+  display: flex;
+
+  &__item {
+    cursor: pointer;
+  }
+
+  &__item + &__item {
+    margin-left: 40px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}

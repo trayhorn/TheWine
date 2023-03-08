@@ -1,0 +1,23 @@
+{
+  "name": "thewine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trayhorn/TheWine.git"
+  },
+  "keywords": [],
+  "author": "Ivan_Amoshyi <YOUR_EMAILclear>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trayhorn/TheWine/issues"
+  },
+  "homepage": "https://github.com/trayhorn/TheWine#readme",
+  "dependencies": {
+    "sass": "^1.58.3"
+  }
+}

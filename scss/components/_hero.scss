@@ -1,0 +1,61 @@
+.hero {
+  color: #FFFFFF;
+  height: 1080px;
+  padding-top: 54px;
+  background-image: url('../../images/hero-image.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &__info-container {
+    width: 525px;
+    margin-left: 841px;
+    margin-top: 145px;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-top: 17px;
+    margin-bottom: 37px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-bottom: 54px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 54px;
+
+    & > span {
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+    }
+  }
+
+  &__button {
+    padding: 20px 71px;
+    background-color: #A70B27;
+    border-radius: 60px;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #FFFFFF;
+  }
+}
