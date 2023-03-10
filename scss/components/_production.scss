@@ -1,0 +1,39 @@
+@import '../utils/variables.scss';
+
+.production-section {
+  background-color: $darkerSectionColor;
+
+  &__container {
+    padding: 180px 312px;
+  }
+
+  &__cards-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 90px;
+    color: $headingColor;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.production-card {
+  width: 330px;
+
+  &__description {
+    margin-top: 32px;
+    color: $textColor;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  &__image {
+    display: block;
+  }
+}

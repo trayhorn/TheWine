@@ -1,0 +1,36 @@
+@import '../utils/variables.scss';
+
+.history-section {
+  background-color: $lightSectionColor;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: 180px 312px;
+  }
+
+  &__image {
+    display: block;
+  }
+}
+
+.history-info {
+  width: 636px;
+  margin-right: 134px;
+
+  &__title {
+    margin-bottom: 48px;
+    color: $headingColor;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: $textColor;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+}

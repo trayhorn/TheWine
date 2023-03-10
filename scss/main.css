@@ -8,8 +8,8 @@
 }
 .hero__info-container {
   width: 525px;
-  margin-left: 841px;
-  margin-top: 145px;
+  margin-left: 1082px;
+  margin-top: 169px;
 }
 .hero__name {
   font-weight: 600;
@@ -81,9 +81,74 @@
   line-height: 1.22;
 }
 
+.history-section {
+  background-color: #FFFCF6;
+}
+.history-section__container {
+  display: flex;
+  align-items: center;
+  padding: 180px 312px;
+}
+.history-section__image {
+  display: block;
+}
+
+.history-info {
+  width: 636px;
+  margin-right: 134px;
+}
+.history-info__title {
+  margin-bottom: 48px;
+  color: #50504F;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.history-info__text {
+  color: #252525;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.production-section {
+  background-color: #F8F3E9;
+}
+.production-section__container {
+  padding: 180px 312px;
+}
+.production-section__cards-box {
+  display: flex;
+  justify-content: space-between;
+}
+.production-section__title {
+  margin-bottom: 90px;
+  color: #50504F;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.production-card {
+  width: 330px;
+}
+.production-card__description {
+  margin-top: 32px;
+  color: #252525;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.production-card__image {
+  display: block;
+}
+
 body {
-  width: 100%;
+  width: 1920px;
   font-family: "Inter", sans-serif;
+  font-weight: 400;
 }
 
 p, h1, h2, h3, h4, h5 {
