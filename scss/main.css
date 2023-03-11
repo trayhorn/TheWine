@@ -145,6 +145,63 @@
   display: block;
 }
 
+.collection-section {
+  background-color: #FFFCF6;
+}
+.collection-section__container {
+  padding: 180px 312px;
+}
+.collection-section__title {
+  color: #50504F;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.collection-card {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collection-card:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.collection-card__title {
+  margin-bottom: 8px;
+  color: #50504F;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.2;
+}
+.collection-card__subtitle {
+  margin-bottom: 38px;
+  color: #252525;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.collection-card__description {
+  margin-bottom: 38px;
+  width: 635px;
+  font-size: 16px;
+  line-height: 1.1875;
+}
+.collection-card__property {
+  display: flex;
+  align-items: center;
+}
+.collection-card__property + .collection-card__property {
+  margin-top: 19px;
+}
+.collection-card__property-text {
+  color: #343434;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
 body {
   width: 1920px;
   font-family: "Inter", sans-serif;
