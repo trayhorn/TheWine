@@ -3,10 +3,9 @@
 .history-section {
   background-color: $lightSectionColor;
 
-  &__container {
+  &__wrapper {
     display: flex;
     align-items: center;
-    padding: 180px 312px;
   }
 
   &__image {

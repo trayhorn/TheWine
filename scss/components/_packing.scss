@@ -1,0 +1,39 @@
+@import '../utils/variables';
+
+.packing-section {
+  background-color: $darkerSectionColor;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.packing-info {
+  width: 631px;
+
+  &__title {
+    color: $headingColor;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    margin-top: 40px;
+    margin-bottom: 90px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  &__box {
+    color: $headingColor;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  &__box.name {
+    margin-bottom: 10px;
+  }
+}
