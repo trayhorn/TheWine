@@ -17,16 +17,8 @@
   width: 636px;
   margin-right: 134px;
 
-  &__title {
-    margin-bottom: 48px;
-    color: $headingColor;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 1.2;
-    text-transform: uppercase;
-  }
-
   &__text {
+    margin-top: 48px;
     color: $textColor;
     font-size: 20px;
     line-height: 1.2;

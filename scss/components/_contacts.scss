@@ -1,0 +1,47 @@
+@import '../utils/variables';
+
+.contacts-section {
+  &__title {
+    text-align: center;
+    margin-bottom: 90px;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contacts-info {
+  &__branch {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  &__city {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: $textColor;
+  }
+
+  &__address {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  &__work-hours {
+    margin-top: 50px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  &__work-hours > span {
+    margin-right: 12px;
+    font-weight: 700;
+  }
+}

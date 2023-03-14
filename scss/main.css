@@ -96,15 +96,8 @@
   width: 636px;
   margin-right: 134px;
 }
-.history-info__title {
-  margin-bottom: 48px;
-  color: #50504F;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
 .history-info__text {
+  margin-top: 48px;
   color: #252525;
   font-size: 20px;
   line-height: 1.2;
@@ -123,12 +116,7 @@
 }
 .production-section__title {
   margin-bottom: 90px;
-  color: #50504F;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.2;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .production-card {
@@ -151,12 +139,7 @@
   padding: 180px 312px;
 }
 .collection-section__title {
-  color: #50504F;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.2;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .collection-card {
@@ -213,13 +196,6 @@
 .packing-info {
   width: 631px;
 }
-.packing-info__title {
-  color: #50504F;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-  text-transform: uppercase;
-}
 .packing-info__description {
   margin-top: 40px;
   margin-bottom: 90px;
@@ -233,6 +209,117 @@
 }
 .packing-info__box.name {
   margin-bottom: 10px;
+}
+
+.benefits-section {
+  margin-bottom: 180px;
+}
+.benefits-section__card-wrapper {
+  display: flex;
+}
+.benefits-section__title {
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.benefit-card + .benefit-card {
+  margin-left: 24px;
+}
+.benefit-card__text {
+  margin-top: 32px;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  color: #252525;
+}
+
+.reviews-section {
+  margin-bottom: 180px;
+}
+.reviews-section__title {
+  margin-bottom: 90px;
+  text-align: center;
+}
+.reviews-section__review-wrapper {
+  display: flex;
+}
+
+.review-card {
+  padding: 32px;
+  background-color: #F8F3E9;
+}
+.review-card + .review-card {
+  margin-left: 24px;
+}
+.review-card > div {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.review-card__comment {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #252525;
+}
+.review-card__avatar {
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.review-card__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #252525;
+}
+.review-card__email {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: underline;
+  color: #50504F;
+}
+
+.contacts-section__title {
+  text-align: center;
+  margin-bottom: 90px;
+}
+.contacts-section__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts-info__branch {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.contacts-info__city {
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #252525;
+}
+.contacts-info__address {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.contacts-info__work-hours {
+  margin-top: 50px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.contacts-info__work-hours > span {
+  margin-right: 12px;
+  font-weight: 700;
 }
 
 .footer {
@@ -267,4 +354,16 @@ li {
 
 .container {
   padding: 180px 312px;
+}
+
+.section-title {
+  color: #50504F;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.other-sections {
+  background-color: #FFFCF6;
 }/*# sourceMappingURL=main.css.map */

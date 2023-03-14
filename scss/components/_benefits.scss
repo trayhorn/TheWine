@@ -1,0 +1,35 @@
+@import '../utils/variables';
+
+
+.benefits-section {
+  margin-bottom: 180px;
+
+  &__card-wrapper {
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 90px;
+    text-align: center;
+  }
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & + & {
+    margin-left: 24px;
+  }
+
+  &__text {
+    margin-top: 32px;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: $textColor;
+  }
+}
+
+

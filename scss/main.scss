@@ -1,9 +1,13 @@
+@import './utils/variables';
 @import './components/hero';
 @import './components/header';
 @import './components/history';
 @import './components/production';
 @import './components/collection';
 @import './components/packing';
+@import './components/benefits';
+@import './components/reviews';
+@import './components/contacts';
 @import './components/footer';
 
 body {
@@ -30,4 +34,16 @@ li {
 
 .container {
   padding: 180px 312px;
+}
+
+.section-title {
+  color: $headingColor;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.other-sections {
+  background-color: $lightSectionColor;
 }
