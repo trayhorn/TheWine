@@ -1,0 +1,100 @@
+@import '../utils/variables';
+
+.order-section {
+  margin-bottom: 180px;
+  display: flex;
+  align-items: center;
+}
+
+.order-form {
+  margin-left: 135px;
+  width: 525px;
+
+  &__title {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: $headingColor;
+  }
+
+  &__field {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  &__input {
+    display: block;
+    margin-bottom: 50px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000000;;
+    background-color: inherit;
+    outline: none;
+    font-family: inherit;
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: text;
+    transition: transform 100ms linear;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 1.22;
+    color: $textColor;
+  }
+
+  &__button {
+    margin-top: 40px;
+    padding: 20px 71px;
+    background-color: #A70B27;
+    border-radius: 60px;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #FFFFFF;
+  }
+}
+
+.form-check {
+  display: flex;
+  font-display: row;
+  align-items: center;
+  position: relative;
+
+  &__box {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-image: url('../../images/icons/unchecked-icon.svg');
+
+    &:checked {
+      background-image: url('../../images/icons/checked-icon.svg');
+    }
+  }
+
+  &__label {
+    margin-left: 26px;
+    font-size: 12px;
+    line-height: 15px;
+    color: $textColor;
+  }
+}
+
+.order-form__input:focus ~ .order-form__label,
+.order-form__input:not(:placeholder-shown).order-form__input:not(:focus) ~ .order-form__label {
+  transform: translate(0,-20px);
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+
