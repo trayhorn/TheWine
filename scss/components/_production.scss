@@ -3,10 +3,6 @@
 .production-section {
   background-color: $darkerSectionColor;
 
-  &__container {
-    padding: 180px 312px;
-  }
-
   &__cards-box {
     display: flex;
     justify-content: space-between;
@@ -23,9 +19,7 @@
 
   &__description {
     margin-top: 32px;
-    color: $textColor;
     font-size: 20px;
-    line-height: 1.2;
   }
 
   &__image {

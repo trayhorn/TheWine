@@ -11,27 +11,6 @@
 @import './components/contacts';
 @import './components/footer';
 
-body {
-  width: 1920px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-}
-
-p, h1, h2, h3, h4, h5 {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  text-decoration: none;
-}
-
 
 .container {
   padding: 180px 312px;
@@ -47,4 +26,8 @@ li {
 
 .other-sections {
   background-color: $lightSectionColor;
+}
+
+.logotype {
+  display: block;
 }

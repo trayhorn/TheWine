@@ -28,35 +28,35 @@
     color: $headingColor;
     font-weight: 600;
     font-size: 36px;
-    line-height: 1.2;
   }
 
   &__subtitle {
     margin-bottom: 38px;
-    color: $textColor;
     font-weight: 600;
     font-size: 20px;
-    line-height: 1.2;
   }
 
   &__description {
-    margin-bottom: 38px;
     width: 635px;
     font-size: 16px;
     line-height: 1.1875;
+    margin-bottom: 38px;
   }
 
   &__property {
     display: flex;
     align-items: center;
   }
-  &__property + &__property {
-    margin-top: 19px;
+  &__property:not(:last-child) {
+    margin-bottom: 19px;
   }
 
   &__property-text {
     color: #343434;
     font-size: 20px;
-    line-height: 1.2;
   }
+}
+
+.collection-card__info > p:nth-of-type(1) {
+  margin-bottom: 19px;
 }

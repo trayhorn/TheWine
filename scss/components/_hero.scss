@@ -1,21 +1,17 @@
 .hero {
   color: #FFFFFF;
-  height: 1080px;
-  padding-top: 54px;
+  height: 1080px; 
   background-image: url('../../images/hero-image.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+}
 
-  &__info-container {
-    width: 525px;
-    margin-left: 1082px;
-    margin-top: 169px;
-  }
+.hero-info {
+  width: 525px;
+  margin: 145px 314px 296px 1082px;
 
   &__name {
     font-weight: 600;
     font-size: 24px;
-    line-height: 1.2;
     text-transform: uppercase;
   }
 
@@ -24,7 +20,6 @@
     margin-bottom: 37px;
     font-weight: 700;
     font-size: 60px;
-    line-height: 1.2;
     text-transform: uppercase;
   }
 
@@ -36,16 +31,18 @@
   }
 
   &__price {
+    display: flex;
+    align-items: baseline;
     font-weight: 500;
     font-size: 24px;
-    line-height: 29px;
+    line-height: 1.22;
     margin-bottom: 54px;
+  }
 
-    & > span {
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 48px;
-    }
+  &__price-number {
+    font-weight: 700;
+    font-size: 40px;
+    margin-right: 10px;
   }
 
   &__button {

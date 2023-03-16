@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./scss/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,41 +14,51 @@
 <body>
   <section class="hero">
     <header class="header">
-      <a href="">
-        <img class="header__logo" src = "./images/logo-wine.svg" alt="Logo">
+      <a class="header__logo" href="#">
+        <img class="logotype" src = "./images/logo-wine.svg" alt="Logo">
       </a>
       <ul class="header-list">
         <li class="header-list__item">
-          <p class="header-list__text">Наша історія </p>
+          <a href="#history">
+            <p class="header-list__text">Наша історія </p>
+          </a>
         </li>
         <li class="header-list__item">
-          <p class="header-list__text">Процес виробництва</p>
+          <a href="#production">
+            <p class="header-list__text">Процес виробництва</p>
+          </a>
         </li>
         <li class="header-list__item">
-          <p class="header-list__text">Що входить в набір</p>
+          <a href="#packing">
+            <p class="header-list__text">Що входить в набір</p>
+          </a>
         </li>
         <li class="header-list__item">
-          <p class="header-list__text">Відгуки</p>
+          <a href="#reviews">
+            <p class="header-list__text">Відгуки</p>
+          </a>
         </li>
         <li class="header-list__item">
-          <p class="header-list__text">Контакти</p>
+          <a href="#contacts">
+            <p class="header-list__text">Контакти</p>
+          </a>
         </li>
       </ul>
     </header>
-    <div class="hero__info-container">
-      <p class="hero__name">Дегустаційний набір </p>
-      <h1 class="hero__title">Крафтове вино</h1>
-      <p class="hero__description">
+    <div class="hero-info">
+      <p class="hero-info__name">Дегустаційний набір</p>
+      <h1 class="hero-info__title">Крафтове вино</h1>
+      <p class="hero-info__description">
         Шість, я повторю, ШІСТЬ різних смаків. Тут вже будь хто знайде смак свого ідеального вина. 
-        І солодкі, і напівсухі, з кислинкою та без... 
+        І солодкі, і напівсухі, з кислинкою та без...
         Мед, вишня, яблуко, ваніль, спеції, персик, шоколад, ви уявіть! 
         Та це симфонія смаків!
       </p>
-      <p class="hero__price"><span>2999</span> грн</p>
-      <button type="button" class="hero__button">Замовити</button>
+      <p class="hero-info__price"><span class="hero-info__price-number">2999</span> грн</p>
+      <button type="button" class="hero-info__button">Замовити</button>
     </div>
   </section>
-  <section class="history-section">
+  <section id="history" class="history-section">
     <div class="history-section__wrapper container">
       <div class="history-info">
         <h2 class="section-title">Наша історія та цінності</h2>
@@ -56,6 +66,8 @@
           Родина Швеців заснувала сімейну виноробню з метою виготовлення місцевих натуральних вин.
           В 2016 році отримали перший врожай та перше вино. А в 2018 році отримали першу в Україні ліцензію для 
           крафтових виноробів.
+        </p>
+        <p class="history-info__text">
           Сьогодні маємо сад органічного винограду в 6 Гектарів на історичних схилах річки Південний Буг.
           Щороку родина Швеців випускає нові сорти та щороку експериментує з купажем, проводить дегустації
           та екскурсії виноробнею.
@@ -64,7 +76,7 @@
       <img class="history-section__image" src="./images/history-section-image.jpg" alt="Пляшка вина, капелюх та квіти">
     </div>
   </section>
-  <section class="production-section">
+  <section id="production" class="production-section">
     <div class="container">
       <h2 class="section-title production-section__title">Процес виробництва</h2>
       <div class="production-section__cards-box">
@@ -92,7 +104,7 @@
       </div>
     </div>
   </section>
-  <section class="collection-section">
+  <section id="collection" class="collection-section">
     <div class="container">
       <h2 class="section-title collection-section__title">В набір входить:</h2>
       <div class="collection-card">
@@ -104,6 +116,8 @@
           <p class="collection-card__description">
             Це вино просте як паперовий літачок і свіже, як вітерець, який його несе. 
             Яскравий фруктовий аромат доповнює кислинку в його смаку.
+          </p>
+          <p class="collection-card__description">
             Солодкавість першого ковтка швидко змінюється такою ж легкою гірчинкою.
             А в дещо терпкому післясмаку з‘являється нота зеленого персика.
           </p>
@@ -131,6 +145,8 @@
           <p class="collection-card__description">
             Висихаючи, колосок стає найбільш наповненим сонцем та енергією.
             Подібно й це сухе вино - повнотіле і наповнене смаком.
+          </p>
+          <p  class="collection-card__description">
             Тут гармонійно поєднуються легка терпкість,
             виражена кислинка та гірчинка темного шоколаду.
           </p>
@@ -158,6 +174,8 @@
           <p class="collection-card__description">
             Вже сама назва передає ніжність та м‘який об‘ємний
             смак цього вина. А тонкий свіжий аромат повністю огортають з першого ж ковтка.
+          </p>
+          <p class="collection-card__description">
             В його глибокому кольорі заховались відтінки
             спілої дині та зеленого винограду.
             Післясмак дарує ноти соковитих черешні та персику.
@@ -186,6 +204,8 @@
           <p class="collection-card__description">
             Грайливе, норовливе і заявляє про себе голосно
             як та чайка, проте таке ж легке, як політ в райдузі морського бризу.
+          </p>
+          <p class="collection-card__description">
             Куштуючи це вино ви відчуваєте аромати червоних
             ягід барбарису, сливи і легкого переливу спецій. 
           </p>
@@ -214,6 +234,8 @@
             Солодке та тягуче як мед, що витікає з соти.
             В ньому майже не чується кислих ноток агрусу,
             переважає аромат квіткового меду та агрусу.
+          </p>
+          <p class="collection-card__description">
             Золотисто медове та сонячно бурштинове.
             І з першого ж ковтка закохує любителів солодких вин.
             Кажуть, воно у нас неймовірно смачне.
@@ -263,7 +285,7 @@
       </div>
     </div>
   </section>
-  <section class="packing-section">
+  <section id="packing" class="packing-section">
     <div class="packing-section__wrapper container">
       <div class="packing-info">
         <h2 class="section-title">Подарункове пакування</h2>
@@ -311,7 +333,7 @@
           </div>
         </div>
       </section>
-      <section class="reviews-section">
+      <section id="reviews" class="reviews-section">
         <h2 class="section-title reviews-section__title">Відгуки наших клієнтів</h2>
         <div class="reviews-section__review-wrapper">
           <div class="review-card">
@@ -378,7 +400,7 @@
           <button class="order-form__button" type="submit">Замовити</button>
         </form>
       </section>
-      <section class="contacts-section">
+      <section id="contacts" class="contacts-section">
         <h2 class="section-title contacts-section__title">Контакти</h2>
         <div class="contacts-section__wrapper">
           <div class="contacts-info">

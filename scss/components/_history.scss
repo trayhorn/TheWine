@@ -19,9 +19,11 @@
 
   &__text {
     margin-top: 48px;
-    color: $textColor;
     font-size: 20px;
-    line-height: 1.2;
     letter-spacing: 0.02em;
+
+    &:first-child {
+      margin-bottom: 24px;
+    }
   }
 }
