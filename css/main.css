@@ -192,12 +192,10 @@
   margin-top: 40px;
   margin-bottom: 90px;
   font-size: 24px;
-  line-height: 1.2;
 }
 .packing-info__box {
   color: #50504F;
   font-size: 16px;
-  line-height: 1.2;
 }
 .packing-info__box.name {
   margin-bottom: 10px;
@@ -219,13 +217,13 @@
   flex-direction: column;
   align-items: center;
 }
-.benefit-card + .benefit-card {
-  margin-left: 24px;
+.benefit-card:not(:last-child) {
+  margin-right: 24px;
 }
 .benefit-card__text {
   margin-top: 32px;
   font-size: 22px;
-  line-height: 27px;
+  line-height: 1.22;
   text-align: center;
   color: #252525;
 }
@@ -245,8 +243,8 @@
   padding: 32px;
   background-color: #F8F3E9;
 }
-.review-card + .review-card {
-  margin-left: 24px;
+.review-card:not(:last-child) {
+  margin-right: 24px;
 }
 .review-card > div {
   display: flex;
@@ -255,8 +253,6 @@
 }
 .review-card__comment {
   font-size: 20px;
-  line-height: 1.2;
-  color: #252525;
 }
 .review-card__avatar {
   border-radius: 50%;
@@ -265,13 +261,12 @@
 .review-card__name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  color: #252525;
+  line-height: 1.19;
 }
 .review-card__email {
   font-weight: 500;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.25;
   text-decoration-line: underline;
   color: #50504F;
 }
@@ -336,7 +331,7 @@
 
 .form-check {
   display: flex;
-  font-display: row;
+  flex-direction: row;
   align-items: center;
   position: relative;
 }

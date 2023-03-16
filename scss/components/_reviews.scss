@@ -17,8 +17,8 @@
   padding: 32px;
   background-color: $darkerSectionColor;
 
-  & + & {
-    margin-left: 24px;
+  &:not(:last-child) {
+    margin-right: 24px;
   }
 
   & > div {
@@ -29,8 +29,6 @@
 
   &__comment {
     font-size: 20px;
-    line-height: 1.2;
-    color: $textColor;
   }
 
   &__avatar {
@@ -41,14 +39,13 @@
   &__name {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
-    color: $textColor;
+    line-height: 1.19;
   }
 
   &__email {
     font-weight: 500;
     font-size: 12px;
-    line-height: 15px;
+    line-height: 1.25;
     text-decoration-line: underline;
     color: $headingColor;
   }

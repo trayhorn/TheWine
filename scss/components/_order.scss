@@ -48,7 +48,6 @@
     margin-bottom: 60px;
     font-size: 18px;
     line-height: 1.22;
-    color: $textColor;
   }
 
   &__button {
@@ -66,7 +65,7 @@
 
 .form-check {
   display: flex;
-  font-display: row;
+  flex-direction: row;
   align-items: center;
   position: relative;
 
