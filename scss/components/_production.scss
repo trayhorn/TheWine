@@ -3,11 +3,6 @@
 .production-section {
   background-color: $darkerSectionColor;
 
-  &__cards-box {
-    display: flex;
-    justify-content: space-between;
-  }
-
   &__title {
     margin-bottom: 90px;
     text-align: center;
@@ -15,7 +10,7 @@
 }
 
 .production-card {
-  width: 330px;
+  max-width: 330px;
 
   &__description {
     margin-top: 32px;
@@ -24,5 +19,16 @@
 
   &__image {
     display: block;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .production-section__cards-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .production-card {
+    width: 100%;
   }
 }
