@@ -3,27 +3,39 @@
 .history-section {
   background-color: $lightSectionColor;
 
-  &__wrapper {
-    display: flex;
-    align-items: center;
-  }
-
   &__image {
     display: block;
   }
 }
 
 .history-info {
-  width: 636px;
-  margin-right: 134px;
+  text-align: left;
+  min-width: 636px;
 
   &__text {
     margin-top: 48px;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 19px;
     letter-spacing: 0.02em;
 
     &:first-child {
       margin-bottom: 24px;
     }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .history-section__wrapper {
+    display: flex;
+    align-items: center;
+  }
+  .history-info__text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .history-info {
+    margin-right: 134px;
   }
 }

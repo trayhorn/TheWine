@@ -1,4 +1,8 @@
-// html,
+* {
+  box-sizing: border-box;
+}
+
+html,
 body,
 div,
 span,
@@ -70,9 +74,6 @@ a {
 img {
   border: 0;
   vertical-align: middle;
-}
-div {
-  box-sizing: border-box;
 }
 blockquote,
 q {

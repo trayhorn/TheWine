@@ -11,6 +11,12 @@
 @import './components/contacts';
 @import './components/footer';
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 
 body {
   font-family: 'Inter', sans-serif;
@@ -22,43 +28,41 @@ body {
 
 .container {
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 1296px;
-}
 
-@media screen and (max-width: 479px) {
-  .container {
+  @media screen and (max-width: 359px) {
+    overflow: auto;
+  }
+  @media screen and (min-width: 360px) {
+    padding-left: 40px;
+    padding-right: 40px;
     width: 360px;
   }
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
+  @media screen and (min-width: 768px) {
+    padding-left: 0;
+    padding-right: 0;
+    width: 768px;
   }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 688px;
-    padding-top: 66px;
-    padding-bottom: 90px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
+  @media screen and (min-width: 1200px) {
     width: 1200px;
-  }
-}
-@media screen and (min-width: 1770px) {
-  .container {
-    width: 1920px;
   }
 }
 
 .section-title {
   color: $headingColor;
+  text-align: center;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 1.2;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 39px;
+  }
 }
 
 .other-sections {

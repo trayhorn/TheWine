@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="./css/main.css">
   <title>The Wine</title>
 </head>
 <body>
-  <section class="hero">
+  <!-- <section class="hero">
     <header class="header">
       <a class="header__logo" href="#">
         <img class="logotype" src = "./images/logo-wine.svg" alt="Logo">
@@ -57,7 +57,7 @@
       <p class="hero-info__price"><span class="hero-info__price-number">2999</span> грн</p>
       <button type="button" class="button">Замовити</button>
     </div>
-  </section>
+  </section> -->
   <section id="history" class="history-section">
     <div class="history-section__wrapper container">
       <div class="history-info">
@@ -73,7 +73,10 @@
           та екскурсії виноробнею.
         </p>
       </div>
-      <img class="history-section__image" src="./images/history-section-image.jpg" alt="Пляшка вина, капелюх та квіти">
+      <picture>
+        <source srcset="./images/768px/history-image-768.jpg" media="(max-width: 1200px)">
+        <img class="history-section__image" src="./images/history-section-image.jpg" alt="Пляшка вина, капелюх та квіти">
+      </picture>
     </div>
   </section>
   <section id="production" class="production-section">
@@ -82,10 +85,11 @@
       <div class="production-section__cards-box">
         <div class="production-card">
           <picture>
-            <source srcset="./images/768px/production-1-768.jpg" media="(max-width: 769px)">
+            <source srcset="./images/320px/production-1.jpg" media="(max-width: 767px)">
+            <source srcset="./images/768px/production-1-768.jpg" media="(max-width: 1199px)">
+            <source srcset="./images/production-image1.jpg" media="(min-width: 1200px)">
             <img class="production-card__image" src="./images/production-image1.jpg" alt="Процес вичавлення">
           </picture>
-          <!-- <img class="production-card__image" src="./images/production-image1.jpg" alt="Процес вичавлення"> -->
           <p class="production-card__description">
             Процес виготовлення вина триває весь рік.
             Все починається зі збору винограду та перетворення його на сік.
@@ -93,10 +97,11 @@
         </div>
         <div class="production-card">
           <picture>
-            <source srcset="./images/768px/production-2-768.jpg" media="(max-width: 769px)">
+            <source srcset="./images/320px/production-2.jpg" media="(max-width: 767px)">
+            <source srcset="./images/768px/production-2-768.jpg" media="(max-width: 1199px)">
+            <source srcset="./images/production-image2.jpg" media="(min-width: 1200px)">
             <img class="production-card__image" src="./images/production-image2.jpg" alt="Процес вичавлення">
           </picture>
-          <!-- <img class="production-card__image" src="./images/production-image2.jpg" alt="Розлив вина по пляшкам"> -->
           <p class="production-card__description">
             Потім вино має відстоятися,
             кісточки випадають в осад (відбувається флорація – процес освітлення).
@@ -104,10 +109,11 @@
         </div>
         <div class="production-card">
           <picture>
-            <source srcset="./images/768px/production-3-768.jpg" media="(max-width: 769px)">
+            <source srcset="./images/320px/production-3.jpg" media="(max-width: 767px)">
+            <source srcset="./images/768px/production-3-768.jpg" media="(max-width: 1199)">
+            <source srcset="./images/production-image3.jpg" media="(min-width: 1200px)">
             <img class="production-card__image" src="./images/production-image3.jpg" alt="Процес вичавлення">
           </picture>
-          <!-- <img class="production-card__image" src="./images/production-image3.jpg" alt="Зрізання виноградних грон"> -->
           <p class="production-card__description">
             А в освітлений сік врешті додають дріжджі.
             Після двох тижнів бродіння вино стає вином.
@@ -116,7 +122,7 @@
       </div>
     </div>
   </section>
-  <section id="collection" class="collection-section">
+  <!-- <section id="collection" class="collection-section">
     <div class="container">
       <h2 class="section-title collection-section__title">В набір входить:</h2>
       <div class="collection-card">
@@ -463,6 +469,6 @@
         </a>
       </nav>
     </div>
-  </footer>
+  </footer> -->
 </body>
 </html>
