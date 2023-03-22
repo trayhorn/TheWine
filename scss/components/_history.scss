@@ -2,33 +2,56 @@
 
 .history-section {
   background-color: $lightSectionColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 90px;
+    padding-bottom: 114px;
+  }
+
+  &__wrapper {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+    }
+  }
 
   &__image {
+    margin-top: 30px;
     display: block;
-  }
-}
 
-.history-info {
-  text-align: left;
-  min-width: 636px;
-
-  &__text {
-    margin-top: 48px;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.02em;
-
-    &:first-child {
-      margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+      margin-top: 45px;
     }
   }
 }
 
-@media screen and (min-width: 769px) {
-  .history-section__wrapper {
-    display: flex;
-    align-items: center;
+.first-text {
+  margin-bottom: 19px;
+}
+
+.history-info {
+  text-align: left;
+
+  &__title {
+    margin-bottom: 30px;
+    margin-top: 0;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 45px;
+    }
   }
+
+  &__text {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .history-info__text {
     font-size: 20px;
   }

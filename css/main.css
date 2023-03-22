@@ -68,30 +68,55 @@
 
 .history-section {
   background-color: #FFFCF6;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.history-section__image {
-  display: block;
+@media screen and (min-width: 768px) {
+  .history-section {
+    padding-top: 90px;
+    padding-bottom: 114px;
+  }
 }
-
-.history-info {
-  text-align: left;
-  min-width: 636px;
-}
-.history-info__text {
-  margin-top: 48px;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.02em;
-}
-.history-info__text:first-child {
-  margin-bottom: 24px;
-}
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .history-section__wrapper {
     display: flex;
     align-items: center;
   }
+}
+.history-section__image {
+  margin-top: 30px;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .history-section__image {
+    margin-top: 45px;
+  }
+}
+
+.first-text {
+  margin-bottom: 19px;
+}
+
+.history-info {
+  text-align: left;
+}
+.history-info__title {
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+@media screen and (min-width: 768px) {
+  .history-info__title {
+    margin-bottom: 45px;
+  }
+}
+.history-info__text {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1200px) {
   .history-info__text {
     font-size: 20px;
   }
@@ -153,46 +178,64 @@
 
 .collection-section {
   background-color: #FFFCF6;
-}
-.collection-section__container {
-  padding: 180px 312px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .collection-section__title {
   text-align: center;
 }
 
-.collection-card {
-  margin-top: 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .collection-card:nth-child(odd) {
   flex-direction: row-reverse;
 }
+@media screen and (min-width: 768px) {
+  .collection-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .collection-card__info {
+    max-width: 326px;
+  }
+}
 .collection-card__title {
-  margin-bottom: 8px;
+  margin-top: 20px;
+  margin-bottom: 5px;
   color: #50504F;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 24px;
+  line-height: 29px;
 }
 .collection-card__subtitle {
-  margin-bottom: 38px;
+  margin-bottom: 30px;
   font-weight: 600;
   font-size: 20px;
 }
+@media screen and (min-width: 768px) {
+  .collection-card__subtitle {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
+}
 .collection-card__description {
-  width: 635px;
   font-size: 16px;
   line-height: 1.1875;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .collection-card__description {
+    margin-bottom: 20px;
+  }
 }
 .collection-card__property {
   display: flex;
   align-items: center;
 }
 .collection-card__property:not(:last-child) {
-  margin-bottom: 19px;
+  margin-bottom: 5px;
 }
 .collection-card__property-text {
   color: #343434;
@@ -204,55 +247,99 @@
 }
 
 .packing-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #F8F3E9;
 }
-.packing-section__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .packing-section__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.packing-section__title {
+  margin-bottom: 30px;
+}
+.packing-section__image {
+  display: block;
+  text-align: center;
 }
 
-.packing-info {
-  width: 631px;
-}
 .packing-info__description {
-  margin-top: 40px;
-  margin-bottom: 90px;
-  font-size: 24px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 19px;
 }
 .packing-info__box {
   color: #50504F;
   font-size: 16px;
+  text-align: center;
 }
 .packing-info__box.name {
-  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .benefits-section {
-  margin-bottom: 180px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.benefits-section__card-wrapper {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .benefits-section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits-section__card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-section__card-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .benefits-section__title {
-  margin-bottom: 90px;
   text-align: center;
 }
 
 .benefit-card {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.benefit-card:not(:last-child) {
-  margin-right: 24px;
+.benefit-card__icon {
+  width: 30px;
+  height: 46px;
+}
+@media screen and (min-width: 768px) {
+  .benefit-card__icon {
+    width: 45px;
+    height: 70px;
+  }
 }
 .benefit-card__text {
-  margin-top: 32px;
-  font-size: 22px;
-  line-height: 1.22;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 17px;
   text-align: center;
   color: #252525;
+}
+@media screen and (min-width: 768px) {
+  .benefit-card__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .reviews-section {
@@ -479,6 +566,73 @@
   box-sizing: border-box;
 }
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+caption,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: inherit;
+  vertical-align: middle;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -500,21 +654,21 @@ body {
 }
 @media screen and (min-width: 360px) {
   .container {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 360px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 40px;
+    padding-right: 40px;
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    width: 1296px;
   }
 }
 

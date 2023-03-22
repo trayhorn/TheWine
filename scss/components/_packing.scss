@@ -1,29 +1,47 @@
 @import '../utils/variables';
 
 .packing-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $darkerSectionColor;
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    display: block;
+    text-align: center;
   }
 }
 
 .packing-info {
-  width: 631px;
+  // width: 631px;
 
   &__description {
-    margin-top: 40px;
-    margin-bottom: 90px;
-    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 19px;
   }
 
   &__box {
     color: $headingColor;
     font-size: 16px;
+    text-align: center;
   }
   &__box.name {
-    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
   }
 }

@@ -2,10 +2,8 @@
 
 .collection-section {
   background-color: $lightSectionColor;
-
-  &__container {
-    padding: 180px 312px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__title {
     text-align: center;
@@ -14,33 +12,53 @@
 
 
 .collection-card {
-  margin-top: 90px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
+  // margin-top: 90px;
+  
   &:nth-child(odd) {
     flex-direction: row-reverse;
   }
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__info {
+    @media screen and (min-width: 768px) {
+      max-width: 326px;
+    }
+  }
+  
   &__title {
-    margin-bottom: 8px;
+    margin-top: 20px;
+    margin-bottom: 5px;
     color: $headingColor;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 24px;
+    line-height: 29px;
   }
 
   &__subtitle {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
     font-weight: 600;
     font-size: 20px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 13px;
+      line-height: 16px;
+      margin-bottom: 20px;
+    }
   }
 
   &__description {
-    width: 635px;
     font-size: 16px;
     line-height: 1.1875;
-    margin-bottom: 38px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 20px;
+    }
   }
 
   &__property {
@@ -48,7 +66,7 @@
     align-items: center;
   }
   &__property:not(:last-child) {
-    margin-bottom: 19px;
+    margin-bottom: 5px;
   }
 
   &__property-text {
