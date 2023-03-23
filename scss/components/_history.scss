@@ -34,12 +34,19 @@
 .history-info {
   text-align: left;
 
+  @media screen and (min-width: 1200px) {
+    margin-right: 134px;
+  }
+
   &__title {
     margin-bottom: 30px;
     margin-top: 0;
 
     @media screen and (min-width: 768px) {
       margin-bottom: 45px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 48px;
     }
   }
 
@@ -48,17 +55,10 @@
     line-height: 19px;
     letter-spacing: 0.02em;
     margin-top: 0;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 20px;
+    }
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .history-info__text {
-    font-size: 20px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .history-info {
-    margin-right: 134px;
-  }
-}

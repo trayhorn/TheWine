@@ -114,21 +114,24 @@ body {
   }
   @media screen and (min-width: 1200px) {
     width: 1296px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .section-title {
   color: $headingColor;
-  text-align: center;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  text-align: center;
   text-transform: uppercase;
 
   @media screen and (min-width: 768px) {
     font-size: 32px;
     line-height: 39px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 40px;
   }
 }
 

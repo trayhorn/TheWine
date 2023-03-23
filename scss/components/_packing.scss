@@ -16,6 +16,7 @@
 
   &__title {
     margin-bottom: 30px;
+    text-align: center;
   }
 
   &__image {
@@ -25,13 +26,24 @@
 }
 
 .packing-info {
-  // width: 631px;
-
+  @media screen and (min-width: 1200px) {
+    margin-right: 140px;
+  }
   &__description {
     margin-top: 30px;
     margin-bottom: 0;
     font-size: 16px;
     line-height: 19px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 25px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 90px;
+    }
   }
 
   &__box {
@@ -43,5 +55,21 @@
     text-align: center;
     margin-top: 10px;
     margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .packing-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .packing-info__box.name {
+    order: 1;
+    text-align: left;
+  }
+
+  .packing-info__box {
+    order: 2;
+    text-align: left;
   }
 }
