@@ -4,23 +4,20 @@
   background-color: #E2D4BD;
 
   &__container {
-    padding: 90px 312px;
-    display: flex;
-    align-items: center;
+
   }
 
   &__logo {
-    margin-right: 233px;
   }
 
-  &__logo-image {
-    display: block;
-  }
+  // &__logo-image {
+  //   display: block;
+  // }
 }
 
 .footer-contacts {
+  list-style: none;
   margin-right: 36px;
-  display: flex;
   font-size: 20px;
   line-height: 1.2;
 
@@ -31,26 +28,20 @@
   &__contact-link {
     text-decoration: none;
     color: $textColor;
+    font-size: 16px;
+    line-height: 19px;
 
     & span {
       font-weight: 700;
-      margin-right: 8px;
     }
   }
 }
 
 .footer-navigation {
-  display: flex;
-  margin-right: 0;
-  margin-left: auto;
-
   &__link {
     display: block;
     text-decoration: none;
     width: fit-content;
     height: fit-content;
-  }
-  &__link:not(:last-child) {
-    margin-right: 32px;
   }
 }

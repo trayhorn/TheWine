@@ -486,6 +486,7 @@
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 30px;
          column-gap: 30px;
+    row-gap: 45px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -497,12 +498,27 @@
 .benefits-section__title {
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .benefits-section__title {
+    margin-bottom: 45px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-section__title {
+    margin-bottom: 90px;
+  }
+}
 
 .benefit-card {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .benefit-card {
+    margin-top: 0;
+  }
 }
 .benefit-card__icon {
   width: 30px;
@@ -699,21 +715,9 @@
 .footer {
   background-color: #E2D4BD;
 }
-.footer__container {
-  padding: 90px 312px;
-  display: flex;
-  align-items: center;
-}
-.footer__logo {
-  margin-right: 233px;
-}
-.footer__logo-image {
-  display: block;
-}
-
 .footer-contacts {
+  list-style: none;
   margin-right: 36px;
-  display: flex;
   font-size: 20px;
   line-height: 1.2;
 }
@@ -723,17 +727,13 @@
 .footer-contacts__contact-link {
   text-decoration: none;
   color: #252525;
+  font-size: 16px;
+  line-height: 19px;
 }
 .footer-contacts__contact-link span {
   font-weight: 700;
-  margin-right: 8px;
 }
 
-.footer-navigation {
-  display: flex;
-  margin-right: 0;
-  margin-left: auto;
-}
 .footer-navigation__link {
   display: block;
   text-decoration: none;
@@ -741,9 +741,6 @@
   width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
-}
-.footer-navigation__link:not(:last-child) {
-  margin-right: 32px;
 }
 
 *,
