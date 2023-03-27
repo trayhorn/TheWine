@@ -1,44 +1,68 @@
 @import '../utils/variables';
 
 .contacts-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+
   &__title {
     text-align: center;
-    margin-bottom: 90px;
+    margin-bottom: 30px;
+    margin-top: 0;
   }
 
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__map {
+    width: 320px;
+    height: 320px;
+
+    @media screen and (min-width: 768px) {
+      width: 330px;
+      height: 251px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 745px;
+      height: 421px;
+    }
   }
 }
 
 .contacts-info {
+  font-size: 16px;
+  line-height: 19px;
+  @media screen and (min-width: 1200px) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
   &__branch {
     margin-bottom: 20px;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
   }
-
   &__city {
     margin-bottom: 6px;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    color: $textColor;
   }
-
   &__address {
     margin-bottom: 20px;
-    font-size: 20px;
-    line-height: 1.2;
   }
-
   &__work-hours {
-    margin-top: 50px;
-    font-size: 20px;
-    line-height: 1.2;
+    margin-bottom: 30px;
   }
   &__work-hours > span {
     margin-right: 12px;

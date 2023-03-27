@@ -9,6 +9,10 @@
     padding-top: 90px;
     padding-bottom: 90px;
   }
+  @media screen and (min-width: 1200px) {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
 
   &__card-wrapper {
     @media screen and (min-width: 768px) {
