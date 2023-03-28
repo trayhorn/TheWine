@@ -3,11 +3,12 @@
   height: 1080px;
   background-image: url('../../images/hero-image.jpg');
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .hero-info {
-  // width: 525px;
-  margin: 145px 314px 296px 1082px;
+  width: 525px;
+  // margin: 145px 314px 296px 1082px;
 
   &__name {
     font-weight: 600;

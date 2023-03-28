@@ -3,10 +3,11 @@
   height: 1080px;
   background-image: url("../../images/hero-image.jpg");
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .hero-info {
-  margin: 145px 314px 296px 1082px;
+  width: 525px;
 }
 .hero-info__name {
   font-weight: 600;
@@ -591,6 +592,13 @@
   line-height: 1.25;
   text-decoration-line: underline;
   color: #50504F;
+}
+
+@media screen and (min-width: 1200px) {
+  .order-section {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .order-form {
