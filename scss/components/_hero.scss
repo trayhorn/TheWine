@@ -1,14 +1,22 @@
 .hero {
   color: #FFFFFF;
-  height: 1080px;
-  background-image: url('../../images/hero-image.jpg');
+  min-height: 800px;
+  background-image: url('../../images/320px/hero.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../../images/768px/hero.jpg');
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url('../../images/hero-image.jpg');
+  }
 }
 
 .hero-info {
-  width: 525px;
-  // margin: 145px 314px 296px 1082px;
+  // width: 525px;
+  // margin-top: 177px;
 
   &__name {
     font-weight: 600;
@@ -17,17 +25,18 @@
   }
 
   &__title {
-    margin-top: 17px;
-    margin-bottom: 37px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 36px;
+    line-height: 44px;
     text-transform: uppercase;
   }
 
   &__description {
-    margin-bottom: 54px;
+    margin-bottom: 30px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.4;
   }
 
@@ -35,14 +44,14 @@
     display: flex;
     align-items: baseline;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 1.22;
-    margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 30px;
   }
 
   &__price-number {
     font-weight: 700;
-    font-size: 40px;
-    margin-right: 10px;
+    font-size: 36px;
+    line-height: 44px;
   }
 }

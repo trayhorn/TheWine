@@ -13,49 +13,55 @@
 </head>
 <body>
   <section class="hero">
-    <!-- <header class="header">
-      <a class="header__logo" href="#">
-        <img class="logotype" src = "./images/logo-wine.svg" alt="Logo">
-      </a>
-      <ul class="header-list">
-        <li class="header-list__item">
-          <a href="#history">
-            <p class="header-list__text">Наша історія </p>
-          </a>
-        </li>
-        <li class="header-list__item">
-          <a href="#production">
-            <p class="header-list__text">Процес виробництва</p>
-          </a>
-        </li>
-        <li class="header-list__item">
-          <a href="#packing">
-            <p class="header-list__text">Що входить в набір</p>
-          </a>
-        </li>
-        <li class="header-list__item">
-          <a href="#reviews">
-            <p class="header-list__text">Відгуки</p>
-          </a>
-        </li>
-        <li class="header-list__item">
-          <a href="#contacts">
-            <p class="header-list__text">Контакти</p>
-          </a>
-        </li>
-      </ul>
-    </header> -->
-    <div class="hero-info">
-      <p class="hero-info__name">Дегустаційний набір</p>
-      <h1 class="hero-info__title">Крафтове вино</h1>
-      <p class="hero-info__description">
-        Шість, я повторю, ШІСТЬ різних смаків. Тут вже будь хто знайде смак свого ідеального вина. 
-        І солодкі, і напівсухі, з кислинкою та без...
-        Мед, вишня, яблуко, ваніль, спеції, персик, шоколад, ви уявіть! 
-        Та це симфонія смаків!
-      </p>
-      <p class="hero-info__price"><span class="hero-info__price-number">2999</span> грн</p>
-      <button type="button" class="button">Замовити</button>
+    <div class="container">
+      <header class="header">
+        <a class="header__logo" href="#">
+          <picture>
+            <source srcset="./images/320px/logo-header-small.svg" media="(max-width: 767px)">
+            <source srcset="./images/768px/logo-header-medium.svg" media="(max-width: 1199px)">
+            <img class="logotype" src = "./images/logo-wine.svg" alt="Logo">
+          </picture>
+        </a>
+        <!-- <ul class="header-list">
+          <li class="header-list__item">
+            <a href="#history">
+              <p class="header-list__text">Наша історія </p>
+            </a>
+          </li>
+          <li class="header-list__item">
+            <a href="#production">
+              <p class="header-list__text">Процес виробництва</p>
+            </a>
+          </li>
+          <li class="header-list__item">
+            <a href="#packing">
+              <p class="header-list__text">Що входить в набір</p>
+            </a>
+          </li>
+          <li class="header-list__item">
+            <a href="#reviews">
+              <p class="header-list__text">Відгуки</p>
+            </a>
+          </li>
+          <li class="header-list__item">
+            <a href="#contacts">
+              <p class="header-list__text">Контакти</p>
+            </a>
+          </li>
+        </ul> -->
+      </header>
+      <div class="hero-info">
+        <p class="hero-info__name">Дегустаційний набір</p>
+        <h1 class="hero-info__title">Крафтове вино</h1>
+        <p class="hero-info__description">
+          Шість, я повторю, ШІСТЬ різних смаків. Тут вже будь хто знайде смак свого ідеального вина. 
+          І солодкі, і напівсухі, з кислинкою та без...
+          Мед, вишня, яблуко, ваніль, спеції, персик, шоколад, ви уявіть! 
+          Та це симфонія смаків!
+        </p>
+        <p class="hero-info__price"><span class="hero-info__price-number">2999</span> грн</p>
+        <button type="button" class="button">Замовити</button>
+      </div>
     </div>
   </section>
   <section id="history" class="history-section">
