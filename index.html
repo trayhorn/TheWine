@@ -12,7 +12,7 @@
   <title>The Wine</title>
 </head>
 <body>
-  <section class="hero">
+  <section class="hero" id="hero-section">
     <div class="container">
       <header class="header">
         <a class="header__logo" href="#">
@@ -60,7 +60,28 @@
           Та це симфонія смаків!
         </p>
         <p class="hero-info__price"><span class="hero-info__price-number">2999</span> грн</p>
-        <button type="button" class="button">Замовити</button>
+        <button id="modal-button" type="button" class="button">Замовити</button>
+      </div>
+      <div class="backdrop is-hidden" id="backdrop">
+        <div class="modal">
+          <img id="close-modal" class="cross-icon" src="./images/close-icon.svg" alt="cross">
+          <form class="modal-form" autocomplete="off">
+            <h2 class="modal-form__title">Залишити заявку</h2>
+            <label class="modal-form__field">
+              <input class="modal-form__input" type="text" name="name" placeholder=" ">
+              <span class="modal-form__label">Ваше ім’я</span>
+            </label>
+            <label class="modal-form__field">
+              <input class="modal-form__input" type="tel" name="number" placeholder=" ">
+              <span class="modal-form__label">Телефон</span>
+            </label>
+            <label class="form-check">
+              <input class="form-check__box" type="checkbox" name="policy" id="policy">
+              <span class="form-check__label">Я погоджуюсь з умовами обробки персональних даних</span>
+            </label>
+            <button class="modal-form__button button" type="submit">Замовити</button>
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -512,5 +533,7 @@
       </ul>
     </div>
   </footer>
+
+  <script src="./js/modal.js"></script>
 </body>
 </html>

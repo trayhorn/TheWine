@@ -7,6 +7,7 @@
   background-position: center;
 
   @media screen and (min-width: 768px) {
+    min-height: 1024px;
     background-image: url('../../images/768px/hero.jpg');
   }
   @media screen and (min-width: 1200px) {
@@ -15,13 +16,18 @@
 }
 
 .hero-info {
-  // width: 525px;
-  // margin-top: 177px;
+  @media screen and (min-width: 768px) {
+    max-width: 567px;
+  }
 
   &__name {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   &__title {
@@ -31,6 +37,17 @@
     font-size: 36px;
     line-height: 44px;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 15px;
+      margin-bottom: 25px;
+      font-size: 60px;
+      line-height: 73px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 17px;
+      margin-bottom: 37px;
+    }
   }
 
   &__description {
@@ -38,6 +55,15 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.4;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 15px;
+      font-size: 20px;
+      line-height: 1.4;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 54px;
+    }
   }
 
   &__price {
@@ -47,11 +73,25 @@
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 25px;
+      font-size: 24px;
+      line-height: 29px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 54px;
+    }
   }
 
   &__price-number {
     font-weight: 700;
     font-size: 36px;
     line-height: 44px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+      line-height: 48px;
+    }
   }
 }
