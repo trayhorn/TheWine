@@ -1,6 +1,7 @@
 .form {
   font-size: 16px;
   line-height: 19px;
+  color: #252525;
 }
 @media screen and (min-width: 768px) {
   .form {
@@ -26,6 +27,7 @@
   top: 0;
   cursor: text;
   transition: transform 100ms linear;
+  color: #252525;
 }
 
 .form-input:not(:-moz-placeholder-shown).form-input:not(:focus) ~ .form-label {
@@ -74,15 +76,14 @@
 .hero {
   position: relative;
   color: #FFFFFF;
-  min-height: 800px;
   background-image: url("../../images/320px/hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 @media screen and (min-width: 768px) {
   .hero {
-    min-height: 1024px;
     background-image: url("../../images/768px/hero.jpg");
   }
 }
@@ -92,15 +93,20 @@
   }
 }
 
+.hero-info {
+  padding-bottom: 150px;
+}
 @media screen and (min-width: 768px) {
   .hero-info {
     max-width: 567px;
+    padding-bottom: 250px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-info {
     margin-left: auto;
     margin-right: 0;
+    padding-bottom: 296px;
   }
 }
 .hero-info__name {
@@ -981,6 +987,7 @@
 .backdrop {
   opacity: 0;
   pointer-events: none;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -996,6 +1003,7 @@
   .backdrop.is-open {
     opacity: 1;
     pointer-events: auto;
+    display: block;
   }
   .modal {
     position: absolute;
@@ -1029,6 +1037,24 @@
     cursor: pointer;
   }
 }
+.pop-up {
+  position: absolute;
+  padding: 95px 20px;
+  width: 100%;
+  background-color: #F8F3E9;
+  transition: transform 250ms linear;
+}
+.pop-up__icon {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.pop-up.visible {
+  transform: translateY(-100%);
+}
+
 *,
 *:before,
 *:after {

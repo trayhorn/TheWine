@@ -1,14 +1,14 @@
 .hero {
   position: relative;
   color: #FFFFFF;
-  min-height: 800px;
   background-image: url('../../images/320px/hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
-    min-height: 1024px;
+    // min-height: 1024px;
     background-image: url('../../images/768px/hero.jpg');
   }
   @media screen and (min-width: 1200px) {
@@ -17,12 +17,15 @@
 }
 
 .hero-info {
+  padding-bottom: 150px;
   @media screen and (min-width: 768px) {
     max-width: 567px;
+    padding-bottom: 250px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: auto;
     margin-right: 0;
+    padding-bottom: 296px;
   }
 
   &__name {

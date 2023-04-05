@@ -51,7 +51,7 @@
           Та це симфонія смаків!
         </p>
         <p class="hero-info__price"><span class="hero-info__price-number">2999</span> грн</p>
-        <button id="modal-button" type="button" class="button">Замовити</button>
+        <button id="modal-button" type="button open-pop-up" class="button">Замовити</button>
       </div>
       <div class="backdrop" id="backdrop">
         <div class="modal">
@@ -75,6 +75,23 @@
         </div>
       </div>
     </div>
+    <form class="order-form pop-up" autocomplete="off">
+      <img id="close-popUp" class="pop-up__icon" src="./images/close-icon.svg" alt="cross">
+      <h2 class="section-title order-form__title">Залишити заявку</h2>
+      <label class="order-form__field form">
+        <input class="form-input" type="text" name="name" placeholder=" ">
+        <span class="form-label">Ваше ім’я</span>
+      </label>
+      <label class="order-form__field">
+        <input class="form-input" type="tel" name="number" placeholder=" ">
+        <span class="form-label">Телефон</span>
+      </label>
+      <label class="form-check">
+        <input class="form-check__box" type="checkbox" name="policy" id="policy">
+        <span class="form-check__label">Я погоджуюсь з умовами обробки персональних даних</span>
+      </label>
+      <button class="form-button button" type="submit">Замовити</button>
+    </form>
   </section>
   <section id="history" class="history-section">
     <div class="history-section__wrapper container">

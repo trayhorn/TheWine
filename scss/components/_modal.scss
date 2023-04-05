@@ -4,6 +4,7 @@
 .backdrop {
   opacity: 0;
   pointer-events: none;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -19,6 +20,7 @@
   .backdrop.is-open {
     opacity: 1;
     pointer-events: auto;
+    display: block;
   }
 
   .modal {
@@ -58,4 +60,25 @@
     right: 30px;
     cursor: pointer;
   }
+}
+
+// POP UP
+
+.pop-up {
+  position: absolute;
+  padding: 95px 20px;
+  width: 100%;
+  background-color: #F8F3E9;
+  transition: transform 250ms linear;
+
+  &__icon {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+  }
+}
+
+.pop-up.visible {
+  transform: translateY(-100%);
 }

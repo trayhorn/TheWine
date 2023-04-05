@@ -3,6 +3,7 @@
 .form {
   font-size: 16px;
   line-height: 19px;
+  color: #252525;
 
   @media screen and (min-width: 768px) {
     max-width: 448px;
@@ -27,6 +28,7 @@
   top: 0;
   cursor: text;
   transition: transform 100ms linear;
+  color: #252525;
 }
 
 .form-input:focus ~ .form-label,
