@@ -1,0 +1,68 @@
+@import '../utils/variables';
+
+.form {
+  font-size: 16px;
+  line-height: 19px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.form-input {
+  display: block;
+  margin-bottom: 50px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000000;;
+  background-color: inherit;
+  outline: none;
+  font-family: inherit;
+}
+
+.form-label {
+  position: absolute;
+  top: 0;
+  cursor: text;
+  transition: transform 100ms linear;
+}
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
+  transform: translate(0,-20px);
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+.form-button {
+  margin-top: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+
+  &__box {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-image: url('../../images/icons/unchecked-icon.svg');
+
+    &:checked {
+      background-image: url('../../images/icons/checked-icon.svg');
+    }
+  }
+
+  &__label {
+    margin-left: 26px;
+    color: $textColor;
+  }
+}

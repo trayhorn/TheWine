@@ -3,10 +3,10 @@ const backdropEl = document.querySelector('#backdrop');
 const closeIconEl = document.querySelector('#close-modal');
 
 function openModal() {
-  backdropEl.classList.remove('is-hidden');
+  backdropEl.classList.add('is-open');
 }
 function closeModal() {
-  backdropEl.classList.add('is-hidden');
+  backdropEl.classList.remove('is-open');
 }
 
 modalButtonEl.addEventListener('click', openModal);

@@ -8,15 +8,6 @@
 }
 
 .order-form {
-  @media screen and (min-width: 768px) {
-    max-width: 448px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  font-size: 16px;
-  line-height: 19px;
-
   &__title {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -33,63 +24,9 @@
     margin-bottom: 50px;
   }
 
-  &__input {
-    display: block;
-    margin-bottom: 50px;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #000000;;
-    background-color: inherit;
-    outline: none;
-    font-family: inherit;
-  }
-
-  &__label {
-    position: absolute;
-    top: 0;
-    cursor: text;
-    transition: transform 100ms linear;
-  }
-
   &__text {
     margin-bottom: 49px;
   }
-
-  &__button {
-    margin-top: 40px;
-    text-align: center;
-  }
-}
-
-.form-check {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-
-  &__box {
-    appearance: none;
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    background-image: url('../../images/icons/unchecked-icon.svg');
-
-    &:checked {
-      background-image: url('../../images/icons/checked-icon.svg');
-    }
-  }
-
-  &__label {
-    margin-left: 26px;
-    color: $textColor;
-  }
-}
-
-.order-form__input:focus ~ .order-form__label,
-.order-form__input:not(:placeholder-shown).order-form__input:not(:focus) ~ .order-form__label {
-  transform: translate(0,-20px);
-  font-size: 12px;
-  line-height: 1.25;
 }
 
 

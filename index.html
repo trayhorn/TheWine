@@ -24,46 +24,22 @@
         </a>
         <div class="menu">
           <div class="burger-icon">
+            <picture>
+            <source srcset="./images/768px/burger-icon768.svg" media="(max-width: 1199px)">
             <img id="open-menu" src="./images/320px/burger-icon.svg" alt="burger menu icon">
+          </picture>
           </div>
           <nav class="menu__nav">
             <img id="close-menu" class="menu__cross-icon" src="./images/320px/icon-cross.svg" alt="cross icon">
             <ul class="menu__list">
-              <li class="menu__link">Наша історія</li>
-              <li class="menu__link">Процес виробництва</li>
-              <li class="menu__link">Що входить в набір</li>
-              <li class="menu__link">Відгуки</li>
-              <li class="menu__link">Контакти</li>
+              <a class="menu__link" href=""><li >Наша історія</li></a>
+              <a class="menu__link" href=""><li >Процес виробництва</li></a>
+              <a class="menu__link" href=""><li >Що входить в набір</li></a>
+              <a class="menu__link" href=""><li >Відгуки</li></a>
+              <a class="menu__link" href=""><li >Контакти</li></a>
             </ul>
           </nav>
         </div>
-        <!-- <ul class="header-list">
-          <li class="header-list__item">
-            <a href="#history">
-              <p class="header-list__text">Наша історія </p>
-            </a>
-          </li>
-          <li class="header-list__item">
-            <a href="#production">
-              <p class="header-list__text">Процес виробництва</p>
-            </a>
-          </li>
-          <li class="header-list__item">
-            <a href="#packing">
-              <p class="header-list__text">Що входить в набір</p>
-            </a>
-          </li>
-          <li class="header-list__item">
-            <a href="#reviews">
-              <p class="header-list__text">Відгуки</p>
-            </a>
-          </li>
-          <li class="header-list__item">
-            <a href="#contacts">
-              <p class="header-list__text">Контакти</p>
-            </a>
-          </li>
-        </ul> -->
       </header>
       <div class="hero-info">
         <p class="hero-info__name">Дегустаційний набір</p>
@@ -77,24 +53,24 @@
         <p class="hero-info__price"><span class="hero-info__price-number">2999</span> грн</p>
         <button id="modal-button" type="button" class="button">Замовити</button>
       </div>
-      <div class="backdrop is-hidden" id="backdrop">
+      <div class="backdrop" id="backdrop">
         <div class="modal">
           <img id="close-modal" class="cross-icon" src="./images/close-icon.svg" alt="cross">
-          <form class="modal-form" autocomplete="off">
+          <form class="modal-form form" autocomplete="off">
             <h2 class="modal-form__title">Залишити заявку</h2>
             <label class="modal-form__field">
-              <input class="modal-form__input" type="text" name="name" placeholder=" ">
-              <span class="modal-form__label">Ваше ім’я</span>
+              <input class="form-input" type="text" name="name" placeholder=" ">
+              <span class="form-label">Ваше ім’я</span>
             </label>
             <label class="modal-form__field">
-              <input class="modal-form__input" type="tel" name="number" placeholder=" ">
-              <span class="modal-form__label">Телефон</span>
+              <input class="form-input" type="tel" name="number" placeholder=" ">
+              <span class="form-label">Телефон</span>
             </label>
             <label class="form-check">
               <input class="form-check__box" type="checkbox" name="policy" id="policy">
               <span class="form-check__label">Я погоджуюсь з умовами обробки персональних даних</span>
             </label>
-            <button class="modal-form__button button" type="submit">Замовити</button>
+            <button class="form-button button" type="submit">Замовити</button>
           </form>
         </div>
       </div>
@@ -479,19 +455,19 @@
             Заповніть форму і ми зв’яжемось
             з вами в робочий час для уточнення деталей
           </p>
-          <label class="order-form__field">
-            <input class="order-form__input" type="text" name="name" placeholder=" ">
-            <span class="order-form__label">Ваше ім’я</span>
+          <label class="order-form__field form">
+            <input class="form-input" type="text" name="name" placeholder=" ">
+            <span class="form-label">Ваше ім’я</span>
           </label>
           <label class="order-form__field">
-            <input class="order-form__input" type="tel" name="number" placeholder=" ">
-            <span class="order-form__label">Телефон</span>
+            <input class="form-input" type="tel" name="number" placeholder=" ">
+            <span class="form-label">Телефон</span>
           </label>
           <label class="form-check">
             <input class="form-check__box" type="checkbox" name="policy" id="policy">
             <span class="form-check__label">Я погоджуюсь з умовами обробки персональних даних</span>
           </label>
-          <button class="order-form__button button" type="submit">Замовити</button>
+          <button class="form-button button" type="submit">Замовити</button>
         </form>
       </section>
       <section id="contacts" class="contacts-section">
