@@ -27,6 +27,15 @@
   &__link {
     color: #FFF;
     text-decoration: none;
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 23px;
+      padding-bottom: 23px;
+      transition: transform 100ms ease-out;
+    }
+  }
+  &__link:hover {
+    transform: translateY(-5px);
   }
   &__link:not(:last-child) {
     margin-right: 40px;

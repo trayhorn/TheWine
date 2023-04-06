@@ -216,6 +216,16 @@
   color: #FFF;
   text-decoration: none;
 }
+@media screen and (min-width: 1200px) {
+  .menu__link {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    transition: transform 100ms ease-out;
+  }
+}
+.menu__link:hover {
+  transform: translateY(-5px);
+}
 .menu__link:not(:last-child) {
   margin-right: 40px;
 }
@@ -1066,7 +1076,7 @@
     overflow-y: scroll;
     opacity: 1;
     pointer-events: auto;
-    transition: opacity 250ms ease-in;
+    transition: opacity 200ms ease-in;
     overflow-y: scroll;
   }
   .backdrop.is-hidden .modal {
@@ -1082,7 +1092,7 @@
     background-color: #FFFCF6;
     border-radius: 20px;
     color: #50504F;
-    transition: transform 250ms ease-in;
+    transition: transform 200ms ease-in;
   }
   .modal-form__title {
     margin-bottom: 58px;

@@ -11,13 +11,20 @@ function openModal() {
     popUpEl.classList.add('visible');
   }
 }
-function closeModal() {
-  backdropEl.classList.add('is-hidden');
-}
+function closeModal(e) {
+  const className = e.target.className;
+  if (className === 'backdrop' || className === 'cross-icon') {
+    backdropEl.classList.add('is-hidden');
+  }
+};
 
 modalButtonEl.addEventListener('click', openModal);
-closeIconEl.addEventListener('click', closeModal);
+
+backdropEl.addEventListener('click', closeModal);
+
 popUpIcon.addEventListener('click', () => {
   popUpEl.classList.remove('visible');
 });
+
+
 

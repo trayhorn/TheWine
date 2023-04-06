@@ -19,7 +19,7 @@
     overflow-y: scroll;
     opacity: 1;
     pointer-events: auto;
-    transition: opacity 250ms ease-in;
+    transition: opacity 200ms ease-in;
     overflow-y: scroll;
   }
   
@@ -38,7 +38,7 @@
     border-radius: 20px;
     color: #50504F;
 
-    transition: transform 250ms ease-in;
+    transition: transform 200ms ease-in;
   }
 
   .modal-form {
