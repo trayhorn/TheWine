@@ -14,8 +14,13 @@
 }
 
 .review-card {
+  min-width: 0;
+  min-height: 268px;
   padding: 32px;
   background-color: $darkerSectionColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &:not(:last-child) {
     margin-right: 24px;
@@ -25,10 +30,12 @@
     display: flex;
     align-items: center;
     margin-top: 30px;
+    min-width: 0;
   }
 
   &__comment {
     font-size: 20px;
+    min-width: 0;
   }
 
   &__avatar {

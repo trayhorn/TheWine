@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   <link rel="stylesheet" href="./css/main.css">
   <title>The Wine</title>
@@ -32,11 +33,11 @@
           <nav class="menu__nav">
             <img id="close-menu" class="menu__cross-icon" src="./images/320px/icon-cross.svg" alt="cross icon">
             <ul class="menu__list">
-              <a class="menu__link" href=""><li >Наша історія</li></a>
-              <a class="menu__link" href=""><li >Процес виробництва</li></a>
-              <a class="menu__link" href=""><li >Що входить в набір</li></a>
-              <a class="menu__link" href=""><li >Відгуки</li></a>
-              <a class="menu__link" href=""><li >Контакти</li></a>
+              <a class="menu__link" href="#history"><li >Наша історія</li></a>
+              <a class="menu__link" href="#production"><li >Процес виробництва</li></a>
+              <a class="menu__link" href="#collection"><li >Що входить в набір</li></a>
+              <a class="menu__link" href="#reviews"><li >Відгуки</li></a>
+              <a class="menu__link" href="#contacts"><li >Контакти</li></a>
             </ul>
           </nav>
         </div>
@@ -365,7 +366,7 @@
       </div>
     </div>
   </section>
-  <section id="packing" class="packing-section">
+  <section class="packing-section">
     <h2 class="section-title packing-section__title">Подарункове пакування</h2>
     <div class="packing-section__wrapper container">
       <picture class="packing-section__image">
@@ -417,53 +418,64 @@
           </div>
         </div>
       </section>
-      <!-- <section id="reviews" class="reviews-section">
+      <section id="reviews" class="reviews-section">
         <h2 class="section-title reviews-section__title">Відгуки наших клієнтів</h2>
-        <div class="reviews-section__review-wrapper">
-          <div class="review-card">
-            <p class="review-card__comment">
-              Дякую за дуже якісне та смачне вино!
-              Приємне на смак. Гарний дизайн пляшки.
-            </p>
-            <div>
-              <img class="review-card__avatar" src="./images/avatar-3.jpg" alt="Фото користувача залишившого відгук">
-              <div>
-                <p class="review-card__name">Михайло, 36 років</p>
-                <p class="review-card__email">@mikha1978_skhvets</p>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="review-card">
+                <p class="review-card__comment">
+                  Дякую за дуже якісне та смачне вино!
+                  Приємне на смак. Гарний дизайн пляшки.
+                </p>
+                <div>
+                  <img class="review-card__avatar" src="./images/avatar-3.jpg" alt="Фото користувача залишившого відгук">
+                  <div>
+                    <p class="review-card__name">Михайло, 36 років</p>
+                    <p class="review-card__email">@mikha1978_skhvets</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="review-card">
-            <p class="review-card__comment">
-              Дуже класне можна сказати "культове" вино!
-              чудовий смак та аромат. Рекомендую!
-            </p>
-            <div>
-              <img class="review-card__avatar" src="./images/avatar-2.jpg" alt="Фото користувача залишившого відгук">
-              <div>
-                <p class="review-card__name">Ірина, 23 роки</p>
-                <p class="review-card__email">@irochka_tkachenko</p>
+            <div class="swiper-slide">
+              <div class="review-card">
+                <p class="review-card__comment">
+                  Дуже класне можна сказати "культове" вино!
+                  чудовий смак та аромат. Рекомендую!
+                </p>
+                <div>
+                  <img class="review-card__avatar" src="./images/avatar-2.jpg" alt="Фото користувача залишившого відгук">
+                  <div>
+                    <p class="review-card__name">Ірина, 23 роки</p>
+                    <p class="review-card__email">@irochka_tkachenko</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="review-card">
-            <p class="review-card__comment">
-              Божественний смак, дрібні бульбашки, 
-              це справжній жіночий напій.
-            </p>
-            <div>
-              <img class="review-card__avatar" src="./images/avatar-1.jpg" alt="Фото користувача залишившого відгук">
-              <div>
-                <p class="review-card__name">Оксана, 45 років</p>
-                <p class="review-card__email">@mikhailova_oksana</p>
+            <div class="swiper-slide">
+              <div class="review-card">
+                <p class="review-card__comment">
+                  Божественний смак, дрібні бульбашки, 
+                  це справжній жіночий напій.
+                </p>
+                <div>
+                  <img class="review-card__avatar" src="./images/avatar-1.jpg" alt="Фото користувача залишившого відгук">
+                  <div>
+                    <p class="review-card__name">Оксана, 45 років</p>
+                    <p class="review-card__email">@mikhailova_oksana</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="order-section">
         <picture class="packing-section__image">
           <source srcset="./images/320px/form.jpg" media="(max-width: 767px)">
+          <source srcset="./images/768px/form.jpg" media="(max-width: 1199px)">
           <img src="./images/form-image.jpg" alt="Set of wine">
         </picture>
         <form class="order-form" autocomplete="off">
@@ -544,5 +556,7 @@
 
   <script type="module" src="./js/menu.js"></script>
   <script type="module" src="./js/modal.js"></script>
+  <script type="module" src="./js/swiper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 </html>
