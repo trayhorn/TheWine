@@ -6,13 +6,13 @@ const popUpIcon = document.querySelector('#close-popUp');
 
 function openModal() {
   if (window.innerWidth >= 767) {
-    backdropEl.classList.add('is-open');
+    backdropEl.classList.remove('is-hidden');
   } else {
     popUpEl.classList.add('visible');
   }
 }
 function closeModal() {
-  backdropEl.classList.remove('is-open');
+  backdropEl.classList.add('is-hidden');
 }
 
 modalButtonEl.addEventListener('click', openModal);
