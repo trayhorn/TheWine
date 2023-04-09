@@ -882,6 +882,12 @@
     margin-top: 45px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .order-form__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
 .order-form__field {
   position: relative;
   margin-bottom: 50px;
