@@ -8,3 +8,24 @@ openEl.addEventListener('click', () => {
 closeEl.addEventListener('click', () => {
   menuEl.classList.remove('is-open');
 });
+
+// Animation
+
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0
+};
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+    return;
+  });
+}, options);
+
+const sections = document.querySelectorAll('section');
+
+sections.forEach(el => observer.observe(el));
