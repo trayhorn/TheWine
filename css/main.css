@@ -213,7 +213,7 @@
   display: flex;
 }
 .menu__link {
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
 }
 @media screen and (min-width: 1200px) {
@@ -224,7 +224,7 @@
   }
 }
 .menu__link:hover {
-  transform: translateY(-5px);
+  transform: scale(1.05);
 }
 .menu__link:not(:last-child) {
   margin-right: 40px;
@@ -236,6 +236,7 @@
 @media screen and (max-width: 1199px) {
   .menu {
     color: #50504F;
+    cursor: pointer;
   }
   .menu__nav {
     position: absolute;
@@ -243,7 +244,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #F8F3E9;
+    background-color: #f8f3e9;
     display: flex;
     align-items: center;
     justify-content: center;
