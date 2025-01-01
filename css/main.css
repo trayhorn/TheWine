@@ -224,7 +224,7 @@
   }
 }
 .menu__link:hover {
-  transform: scale(1.05);
+  text-decoration: underline;
 }
 .menu__link:not(:last-child) {
   margin-right: 40px;
@@ -248,14 +248,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    transition: transform 200ms linear, opacity 200ms linear, visibility 0ms 200ms;
   }
   .menu__nav.is-open {
+    transform: translateY(0);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    transition: transform 200ms linear, opacity 200ms linear, visibility 0ms;
   }
   .menu__list {
     list-style: none;
