@@ -64,6 +64,7 @@
   height: 16px;
   position: absolute;
   background-image: url("../../images/icons/unchecked-icon.svg");
+  cursor: pointer;
 }
 .form-check__box:checked {
   background-image: url("../../images/icons/checked-icon.svg");
@@ -252,6 +253,7 @@
     visibility: hidden;
     pointer-events: none;
     transition: transform 200ms linear, opacity 200ms linear, visibility 0ms 200ms;
+    z-index: 1;
   }
   .menu__nav.is-open {
     transform: translateY(0);
@@ -1286,20 +1288,51 @@ body {
   display: block;
 }
 
-.button {
+.primary-button {
+  position: relative;
   padding: 20px 71px;
-  background-color: #A70B27;
   border-radius: 60px;
-  border: none;
+  border: 1px solid transparent;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   color: #FFFFFF;
   cursor: pointer;
+  transition: all linear 250ms;
+  overflow: hidden;
+  z-index: 0;
 }
-
-.button:is(:hover, :focus) {
+.primary-button:disabled {
+  background-color: #A70B27;
+  opacity: 0.5;
+}
+.primary-button::after, .primary-button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  border-radius: 60px;
+  transition: all linear 250ms;
+  height: 100%;
+}
+.primary-button::after {
+  width: 100%;
+  background-color: #A70B27;
+  z-index: -2;
+}
+.primary-button::before {
+  width: 0%;
   background-color: #FF0F3A;
+  transition: all 0.3s;
+  z-index: -1;
+}
+.primary-button:hover:before, .primary-button:focus:before {
+  width: 100%;
+}
+.primary-button:disabled:after, .primary-button:disabled:before {
+  pointer-events: none;
+  opacity: 0;
 }
 
 @media (prefers-reduced-motion) {

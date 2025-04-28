@@ -57,6 +57,7 @@
     height: 16px;
     position: absolute;
     background-image: url('../../images/icons/unchecked-icon.svg');
+    cursor: pointer;
 
     &:checked {
       background-image: url('../../images/icons/checked-icon.svg');

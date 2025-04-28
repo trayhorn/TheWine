@@ -149,20 +149,60 @@ body {
   display: block;
 }
 
-.button {
+.primary-button {
+  position: relative;
   padding: 20px 71px;
-  background-color: #A70B27;
   border-radius: 60px;
-  border: none;
+  border: 1px solid transparent;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
   color: #FFFFFF;
   cursor: pointer;
-}
+  transition: all linear 250ms;
+  overflow: hidden;
+  z-index: 0;
 
-.button:is(:hover, :focus) {
-  background-color: #FF0F3A;
+  &:disabled {
+    background-color: #A70B27;
+    opacity: 0.5;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: none;
+    border-radius: 60px;
+    transition: all linear 250ms;
+    height: 100%;
+  }
+
+  &::after {
+    width: 100%;
+    background-color: #A70B27;
+    z-index: -2;
+  }
+
+  &::before {
+    width: 0%;
+    background-color: #FF0F3A;
+    transition: all .3s;
+    z-index: -1;
+  }
+
+  &:hover:before,
+  &:focus:before {
+    width: 100%;
+  }
+
+  &:disabled:after,
+  &:disabled:before {
+    pointer-events: none;
+    opacity: 0;
+  }
 }
 
 @media(prefers-reduced-motion) {

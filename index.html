@@ -34,19 +34,19 @@
             <img id="close-menu" class="menu__cross-icon" src="./images/320px/icon-cross.svg" alt="cross icon">
             <ul class="menu__list">
               <a class="menu__link" href="#history" data-text="Наша історія">
-                <li >Наша історія</li>
+                <li class="menu__link-target" >Наша історія</li>
               </a>
               <a class="menu__link" href="#production" data-text="Процес виробництва">
-                <li >Процес виробництва</li>
+                <li class="menu__link-target" >Процес виробництва</li>
               </a>
               <a class="menu__link" href="#collection" data-text="Що входить в набір">
-                <li >Що входить в набір</li>
+                <li class="menu__link-target" >Що входить в набір</li>
               </a>
               <a class="menu__link" href="#reviews" data-text="Відгуки">
-                <li >Відгуки</li>
+                <li class="menu__link-target" >Відгуки</li>
               </a>
               <a class="menu__link" href="#contacts" data-text="Контакти">
-                <li >Контакти</li>
+                <li class="menu__link-target" >Контакти</li>
               </a>
             </ul>
           </nav>
@@ -62,7 +62,7 @@
           Та це симфонія смаків!
         </p>
         <p class="hero-info__price"><span class="hero-info__price-number">2999</span> грн</p>
-        <button id="modal-button" type="button open-pop-up" class="button">Замовити</button>
+        <button id="modal-button" type="button open-pop-up" class="primary-button">Замовити</button>
       </div>
     </div>
     <div class="backdrop is-hidden" id="backdrop">
@@ -82,27 +82,10 @@
             <input class="form-check__box" type="checkbox" name="policy" id="policy">
             <span class="form-check__label">Я погоджуюсь з умовами обробки персональних даних</span>
           </label>
-          <button class="form-button button" type="submit">Замовити</button>
+          <button class="form-button primary-button" disabled type="submit">Замовити</button>
         </form>
       </div>
     </div>
-    <!-- <form class="order-form pop-up" autocomplete="off">
-      <img id="close-popUp" class="pop-up__icon" src="./images/close-icon.svg" alt="cross">
-      <h2 class="section-title order-form__title">Залишити заявку</h2>
-      <label class="order-form__field form">
-        <input class="form-input" type="text" name="name" placeholder=" ">
-        <span class="form-label">Ваше ім’я</span>
-      </label>
-      <label class="order-form__field">
-        <input class="form-input" type="tel" name="number" placeholder=" ">
-        <span class="form-label">Телефон</span>
-      </label>
-      <label class="form-check">
-        <input class="form-check__box" type="checkbox" name="policy" id="policy">
-        <span class="form-check__label">Я погоджуюсь з умовами обробки персональних даних</span>
-      </label>
-      <button class="form-button button" type="submit">Замовити</button>
-    </form> -->
   </section>
   <section id="history" class="history-section">
     <div class="history-section__wrapper container">
@@ -491,7 +474,7 @@
           <source srcset="./images/768px/form.jpg" media="(max-width: 1199px)">
           <img src="./images/form-image.jpg" alt="Set of wine">
         </picture>
-        <form class="order-form" autocomplete="off">
+        <form class="order-form form" autocomplete="off">
           <h2 class="section-title order-form__title">замовити набір<br>крафтового вина</h2>
           <p class="order-form__text">
             Заповніть форму і ми зв’яжемось
@@ -509,7 +492,7 @@
             <input class="form-check__box" type="checkbox" name="policy" id="policy">
             <span class="form-check__label">Я погоджуюсь з умовами обробки персональних даних</span>
           </label>
-          <button class="form-button button" type="submit">Замовити</button>
+          <button class="form-button primary-button" disabled type="submit">Замовити</button>
         </form>
       </section>
       <section id="contacts" class="contacts-section">
@@ -568,7 +551,6 @@
   </footer>
 
   <script type="module" src="./js/menu.js"></script>
-  <script type="module" src="./js/modal.js"></script>
   <script type="module" src="./js/swiper.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
